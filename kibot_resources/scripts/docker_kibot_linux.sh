@@ -34,7 +34,7 @@ docker run --rm -it \
     --volume="/etc/group:/etc/group:ro" \
     --volume="/etc/passwd:/etc/passwd:ro" \
     --volume="/etc/shadow:/etc/shadow:ro" \
-    --volume="/home/$USER_NAME:/home/$USER_NAME:rw" \
+    --volume="/home/xela:/home/xela:rw" \
     --entrypoint /bin/bash \
     "$IMAGE" -c "
     if ! id $USER_NAME &>/dev/null; then

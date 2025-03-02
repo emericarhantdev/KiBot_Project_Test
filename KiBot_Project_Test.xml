@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/github/workspace/KiBot_Project_Test.kicad_sch</source>
-    <date>Date1</date>
+    <source>/home/xela/emeric_work/KiBot_Project_Test/KiBot_Project_Test.kicad_sch</source>
+    <date>2026-06-26T01:26:34+0000</date>
     <tool>Eeschema 8.0.8+1</tool>
     <textvar name="ASSEMBLY_NOTES">ASSEMBLY NOTES (UNLESS OTHERWISE SPECIFIED)
 
@@ -74,7 +74,7 @@
 11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
 
 12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
-    <textvar name="GIT_HASH_PCB">b789e77</textvar>
+    <textvar name="GIT_HASH_PCB">ec3f418</textvar>
     <textvar name="GIT_HASH_SCH">77e9e33</textvar>
     <textvar name="GIT_URL">https://github.com/nguyen-v/KDT_Hierarchical_KiBot</textvar>
     <textvar name="PROJECT_NAME">Project Name</textvar>
@@ -83,18 +83,22 @@
 Added
 
 -   First version of the PCB and schematic.</textvar>
-    <textvar name="RELEASE_BODY_1.0.1">Version 1.0.1 not found.</textvar>
+    <textvar name="RELEASE_BODY_1.0.1">___________________________________
+
+Changed
+
+-   Moved the SWCLK trace away.</textvar>
     <textvar name="RELEASE_BODY_1.0.2"/>
     <textvar name="RELEASE_BODY_1.1.0"/>
     <textvar name="RELEASE_BODY_UNRELEASED">Version Unreleased not found.</textvar>
     <textvar name="RELEASE_DATE">02-Mar-2025</textvar>
     <textvar name="RELEASE_DATE_NUM">2025-03-02</textvar>
     <textvar name="RELEASE_TITLE_1.0.0">Version 1.0.0 - 2025-03-02</textvar>
-    <textvar name="RELEASE_TITLE_1.0.1">Version 1.0.1 not found.</textvar>
+    <textvar name="RELEASE_TITLE_1.0.1">Version 1.0.1 - 2025-03-02</textvar>
     <textvar name="RELEASE_TITLE_1.0.2"/>
     <textvar name="RELEASE_TITLE_1.1.0"/>
     <textvar name="RELEASE_TITLE_UNRELEASED">Version Unreleased not found.</textvar>
-    <textvar name="REVISION">1.0.0+ (Unreleased)</textvar>
+    <textvar name="REVISION">1.0.1+ (Unreleased)</textvar>
     <textvar name="SHEET_NAME_1">Cover Page</textvar>
     <textvar name="SHEET_NAME_10">......................................</textvar>
     <textvar name="SHEET_NAME_11">......................................</textvar>
@@ -140,8 +144,8 @@ Added
       <title_block>
         <title/>
         <company>Company Name</company>
-        <rev>1.0.0+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.0.1+ (Unreleased)</rev>
+        <date>2025-01-12</date>
         <source>KiBot_Project_Test.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -158,8 +162,8 @@ Added
       <title_block>
         <title>Block Diagram</title>
         <company>Company Name</company>
-        <rev>1.0.0+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.0.1+ (Unreleased)</rev>
+        <date>2025-01-12</date>
         <source>Block Diagram.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -176,8 +180,8 @@ Added
       <title_block>
         <title>Project Architecture</title>
         <company>Company Name</company>
-        <rev>1.0.0+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.0.1+ (Unreleased)</rev>
+        <date>2025-01-12</date>
         <source>Project Architecture.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -194,8 +198,8 @@ Added
       <title_block>
         <title>MCU</title>
         <company>Company Name</company>
-        <rev>1.0.0+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.0.1+ (Unreleased)</rev>
+        <date>2025-01-12</date>
         <source>MCU.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -212,8 +216,8 @@ Added
       <title_block>
         <title>IMU</title>
         <company>Company Name</company>
-        <rev>1.0.0+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.0.1+ (Unreleased)</rev>
+        <date>2025-01-12</date>
         <source>IMU.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -230,7 +234,7 @@ Added
       <title_block>
         <title>Connectors</title>
         <company>Company Name</company>
-        <rev>1.0.0+ (Unreleased)</rev>
+        <rev>1.0.1+ (Unreleased)</rev>
         <date/>
         <source>Connectors.kicad_sch</source>
         <comment number="1" value=""/>
@@ -248,8 +252,8 @@ Added
       <title_block>
         <title>Holes, Fiducials</title>
         <company>Company Name</company>
-        <rev>1.0.0+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.0.1+ (Unreleased)</rev>
+        <date>2025-01-24</date>
         <source>Holes, Fiducials.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -266,8 +270,8 @@ Added
       <title_block>
         <title>Revision History</title>
         <company>Company Name</company>
-        <rev>1.0.0+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.0.1+ (Unreleased)</rev>
+        <date>2025-01-12</date>
         <source>Revision History.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -1977,10 +1981,10 @@ Added
   </libparts>
   <libraries>
     <library logical="0_linear_regulator">
-      <uri>/github/workspace/lib/lib_sym/0_linear_regulator.kicad_sym</uri>
+      <uri>/home/xela/emeric_work/KiBot_Project_Test/lib/lib_sym/0_linear_regulator.kicad_sym</uri>
     </library>
     <library logical="0_mcu">
-      <uri>/github/workspace/lib/lib_sym/0_mcu.kicad_sym</uri>
+      <uri>/home/xela/emeric_work/KiBot_Project_Test/lib/lib_sym/0_mcu.kicad_sym</uri>
     </library>
     <library logical="Connector">
       <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
