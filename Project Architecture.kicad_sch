@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "07236397-3ba4-47af-9809-3faac3a2aa49")
 	(paper "A3")
 	(title_block
@@ -11,54 +11,6 @@
 		(company "${COMPANY}")
 	)
 	(lib_symbols)
-	(bus_alias "I2C2"
-		(members "I2C2_SDA" "I2C2_SCL" "IMU_~{RESET}" "IMU_INT")
-	)
-	(bus_alias "SWD"
-		(members "SWDIO" "SWCLK" "NRST")
-	)
-	(bus
-		(pts
-			(xy 231.14 125.73) (xy 241.3 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "567e4b15-1da0-4689-9809-bc038bf61482")
-	)
-	(bus
-		(pts
-			(xy 181.61 125.73) (xy 194.31 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7fe1e36b-f77d-424b-8908-1b3d52b80599")
-	)
-	(text_box "[${#}] ${TITLE}"
-		(exclude_from_sim no)
-		(at 144.78 21.59 0)
-		(size 130.81 12.7)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 8 8)
-				(thickness 1.2)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-		)
-		(uuid "f4789478-c68e-4cee-9edd-5d11b744f94d")
-	)
 	(text "Page 6"
 		(exclude_from_sim no)
 		(at 180.34 135.89 0)
@@ -119,20 +71,69 @@
 		)
 		(uuid "f04f874a-d252-4474-87f2-c34bbb094a4c")
 	)
+	(text_box "[${#}] ${TITLE}"
+		(exclude_from_sim no)
+		(at 144.78 21.59 0)
+		(size 130.81 12.7)
+		(margins 5.9999 5.9999 5.9999 5.9999)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 8 8)
+				(thickness 1.2)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+		)
+		(uuid "f4789478-c68e-4cee-9edd-5d11b744f94d")
+	)
+	(bus
+		(pts
+			(xy 231.14 125.73) (xy 241.3 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "567e4b15-1da0-4689-9809-bc038bf61482")
+	)
+	(bus
+		(pts
+			(xy 181.61 125.73) (xy 194.31 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fe1e36b-f77d-424b-8908-1b3d52b80599")
+	)
 	(sheet
 		(at 241.3 147.32)
 		(size 36.83 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 255 200 0 0.5020)
+			(color 255 200 0 0.502)
 		)
 		(uuid "387c2d3b-892a-470b-ba39-cf83346b1b07")
 		(property "Sheetname" "Holes, Fiducials"
 			(at 241.3 146.2909 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -144,6 +145,8 @@
 		)
 		(property "Sheetfile" "Holes, Fiducials.kicad_sch"
 			(at 241.3 168.2246 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
@@ -163,17 +166,23 @@
 	(sheet
 		(at 147.32 116.84)
 		(size 34.29 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 187 255 251 1.0000)
+			(color 187 255 251 1)
 		)
 		(uuid "df39f164-d0cb-4b4e-9c05-2a16fbd35e35")
 		(property "Sheetname" "Connectors"
 			(at 147.32 115.8109 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -186,6 +195,8 @@
 		)
 		(property "Sheetfile" "Connectors.kicad_sch"
 			(at 147.32 137.7446 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
@@ -196,6 +207,7 @@
 		)
 		(pin "{SWD}" bidirectional
 			(at 181.61 125.73 0)
+			(uuid "91c81c82-358a-400e-9517-84032b2e8e8e")
 			(effects
 				(font
 					(face "Arial")
@@ -204,7 +216,6 @@
 				)
 				(justify right)
 			)
-			(uuid "91c81c82-358a-400e-9517-84032b2e8e8e")
 		)
 		(instances
 			(project "KiBot_Project_Test"
@@ -217,17 +228,23 @@
 	(sheet
 		(at 241.3 116.84)
 		(size 36.83 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 255 200 0 0.5020)
+			(color 255 200 0 0.502)
 		)
 		(uuid "e744f3ce-03a6-44a6-8792-1447ef232b9a")
 		(property "Sheetname" "IMU"
 			(at 241.3 115.8109 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -239,6 +256,8 @@
 		)
 		(property "Sheetfile" "IMU.kicad_sch"
 			(at 241.3 137.7446 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
@@ -249,6 +268,7 @@
 		)
 		(pin "{I2C2}" bidirectional
 			(at 241.3 125.73 180)
+			(uuid "25923017-048c-4ff8-b80b-83c04ff8b78a")
 			(effects
 				(font
 					(face "Arial")
@@ -257,7 +277,6 @@
 				)
 				(justify left)
 			)
-			(uuid "25923017-048c-4ff8-b80b-83c04ff8b78a")
 		)
 		(instances
 			(project "KiBot_Project_Test"
@@ -270,17 +289,23 @@
 	(sheet
 		(at 194.31 116.84)
 		(size 36.83 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 128 255 128 0.5000)
+			(color 128 255 128 0.5)
 		)
 		(uuid "f06537ee-772d-44d3-8c50-e0ba41038c9c")
 		(property "Sheetname" "MCU"
 			(at 194.31 115.8109 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -292,6 +317,8 @@
 		)
 		(property "Sheetfile" "MCU.kicad_sch"
 			(at 194.31 137.7446 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Arial")
@@ -302,6 +329,7 @@
 		)
 		(pin "{I2C2}" bidirectional
 			(at 231.14 125.73 0)
+			(uuid "e3bec393-e505-4918-bbdf-0acce9c5b653")
 			(effects
 				(font
 					(face "Arial")
@@ -310,10 +338,10 @@
 				)
 				(justify right)
 			)
-			(uuid "e3bec393-e505-4918-bbdf-0acce9c5b653")
 		)
 		(pin "{SWD}" bidirectional
 			(at 194.31 125.73 180)
+			(uuid "72fa67fb-1b3a-43c0-b038-95bd37c40083")
 			(effects
 				(font
 					(face "Arial")
@@ -322,7 +350,6 @@
 				)
 				(justify left)
 			)
-			(uuid "72fa67fb-1b3a-43c0-b038-95bd37c40083")
 		)
 		(instances
 			(project "KiBot_Project_Test"

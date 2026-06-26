@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "ea8c4f5e-7a49-4faf-a994-dbc85ed86b0a")
 	(paper "A4")
 	(title_block
@@ -15,8 +15,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at -15.24 46.99 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -26,6 +30,8 @@
 			)
 			(property "Value" "STM32G474RETx"
 				(at 0 46.99 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -35,34 +41,42 @@
 			)
 			(property "Footprint" "0_package_QFP:LQFP-64_10x10mm_P0.5mm"
 				(at 26.67 -88.9 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify right)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32g474re.pdf"
 				(at -3.81 -91.44 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "STMicroelectronics Arm Cortex-M4 MCU, 512KB flash, 128KB RAM, 170 MHz, 1.71-3.6V, 58 GPIO, LQFP64"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_locked" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -71,20 +85,24 @@
 			)
 			(property "ki_keywords" "Arm Cortex-M4 STM32G4 STM32G4x4"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "QFN*1EP*7x7mm*P0.5mm*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "STM32G474RETx_1_1"
@@ -352,19 +370,7 @@
 				)
 				(polyline
 					(pts
-						(xy 13.97 38.1) (xy -13.97 38.1)
-					)
-					(stroke
-						(width 0)
-						(type dash)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -8.89 -6.35) (xy -7.62 -6.35) (xy -7.62 -46.99) (xy -8.89 -46.99)
+						(xy -8.89 11.43) (xy -7.62 11.43) (xy -7.62 6.35) (xy -8.89 6.35)
 					)
 					(stroke
 						(width 0)
@@ -388,7 +394,7 @@
 				)
 				(polyline
 					(pts
-						(xy -8.89 11.43) (xy -7.62 11.43) (xy -7.62 6.35) (xy -8.89 6.35)
+						(xy -8.89 -6.35) (xy -7.62 -6.35) (xy -7.62 -46.99) (xy -8.89 -46.99)
 					)
 					(stroke
 						(width 0)
@@ -412,6 +418,18 @@
 				)
 				(polyline
 					(pts
+						(xy 8.89 -1.27) (xy 7.62 -1.27) (xy 7.62 34.29) (xy 8.89 34.29)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy 8.89 -6.35) (xy 7.62 -6.35) (xy 7.62 -46.99) (xy 8.89 -46.99)
 					)
 					(stroke
@@ -424,14 +442,50 @@
 				)
 				(polyline
 					(pts
-						(xy 8.89 -1.27) (xy 7.62 -1.27) (xy 7.62 34.29) (xy 8.89 34.29)
+						(xy 13.97 38.1) (xy -13.97 38.1)
 					)
 					(stroke
 						(width 0)
-						(type default)
+						(type dash)
 					)
 					(fill
 						(type none)
+					)
+				)
+				(text "PORT F"
+					(at -6.35 8.89 900)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify top)
+					)
+				)
+				(text "PORT D"
+					(at -6.35 0 900)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify top)
+					)
+				)
+				(text "PORT C"
+					(at -6.35 -26.67 900)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify top)
+					)
+				)
+				(text "SWD"
+					(at -5.08 30.48 900)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify top)
 					)
 				)
 				(text "I/O"
@@ -461,41 +515,186 @@
 						(justify bottom)
 					)
 				)
-				(text "PORT C"
-					(at -6.35 -26.67 900)
-					(effects
-						(font
-							(size 1.27 1.27)
+				(pin bidirectional line
+					(at -17.78 -40.64 0)
+					(length 2.54)
+					(name "PC13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
 						)
-						(justify top)
 					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "RTC_OUT1" bidirectional line)
+					(alternate "RTC_TAMP1" bidirectional line)
+					(alternate "RTC_TS" bidirectional line)
+					(alternate "SYS_WKUP2" bidirectional line)
+					(alternate "TIM1_BKIN" bidirectional line)
+					(alternate "TIM1_CH1N" bidirectional line)
+					(alternate "TIM8_CH4N" bidirectional line)
 				)
-				(text "PORT D"
-					(at -6.35 0 900)
-					(effects
-						(font
-							(size 1.27 1.27)
+				(pin bidirectional line
+					(at -17.78 -43.18 0)
+					(length 2.54)
+					(name "PC14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
 						)
-						(justify top)
 					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "RCC_OSC32_IN" bidirectional line)
 				)
-				(text "PORT F"
-					(at -6.35 8.89 900)
-					(effects
-						(font
-							(size 1.27 1.27)
+				(pin bidirectional line
+					(at -17.78 -45.72 0)
+					(length 2.54)
+					(name "PC15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
 						)
-						(justify top)
 					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC1_EXTI15" bidirectional line)
+					(alternate "ADC2_EXTI15" bidirectional line)
+					(alternate "RCC_OSC32_OUT" bidirectional line)
 				)
-				(text "SWD"
-					(at -5.08 30.48 900)
-					(effects
-						(font
-							(size 1.27 1.27)
+				(pin bidirectional line
+					(at -17.78 10.16 0)
+					(length 2.54)
+					(name "PF0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
 						)
-						(justify top)
 					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC1_IN10" bidirectional line)
+					(alternate "I2C2_SDA" bidirectional line)
+					(alternate "I2S2_WS" bidirectional line)
+					(alternate "RCC_OSC_IN" bidirectional line)
+					(alternate "SPI2_NSS" bidirectional line)
+					(alternate "TIM1_CH3N" bidirectional line)
+				)
+				(pin bidirectional line
+					(at -17.78 7.62 0)
+					(length 2.54)
+					(name "PF1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC2_IN10" bidirectional line)
+					(alternate "COMP3_INM" bidirectional line)
+					(alternate "I2S2_CK" bidirectional line)
+					(alternate "RCC_OSC_OUT" bidirectional line)
+					(alternate "SPI2_SCK" bidirectional line)
+				)
+				(pin bidirectional line
+					(at -17.78 27.94 0)
+					(length 2.54)
+					(name "PG10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "DAC1_EXTI10" bidirectional line)
+					(alternate "DAC2_EXTI10" bidirectional line)
+					(alternate "DAC3_EXTI10" bidirectional line)
+					(alternate "DAC4_EXTI10" bidirectional line)
+					(alternate "RCC_MCO" bidirectional line)
+				)
+				(pin bidirectional line
+					(at -17.78 -7.62 0)
+					(length 2.54)
+					(name "PC0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC2_IN5" bidirectional line)
+					(alternate "I2C2_SCL" bidirectional line)
+					(alternate "QUADSPI1_BK2_IO3" bidirectional line)
+					(alternate "TIM1_ETR" bidirectional line)
+					(alternate "USART1_TX" bidirectional line)
+				)
+				(pin bidirectional line
+					(at -17.78 -10.16 0)
+					(length 2.54)
+					(name "PC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "ADC2_IN5" bidirectional line)
+					(alternate "I2C2_SCL" bidirectional line)
+					(alternate "QUADSPI1_BK2_IO3" bidirectional line)
+					(alternate "TIM1_ETR" bidirectional line)
+					(alternate "USART1_TX" bidirectional line)
 				)
 				(pin bidirectional line
 					(at -17.78 -12.7 0)
@@ -740,31 +939,6 @@
 					(alternate "UCPD1_FRSTX2" bidirectional line)
 				)
 				(pin bidirectional line
-					(at -17.78 -40.64 0)
-					(length 2.54)
-					(name "PC13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "RTC_OUT1" bidirectional line)
-					(alternate "RTC_TAMP1" bidirectional line)
-					(alternate "RTC_TS" bidirectional line)
-					(alternate "SYS_WKUP2" bidirectional line)
-					(alternate "TIM1_BKIN" bidirectional line)
-					(alternate "TIM1_CH1N" bidirectional line)
-					(alternate "TIM8_CH4N" bidirectional line)
-				)
-				(pin bidirectional line
 					(at 17.78 17.78 180)
 					(length 2.54)
 					(name "PA6"
@@ -969,25 +1143,6 @@
 					(alternate "RTC_OUT2" bidirectional line)
 					(alternate "TIM20_CH1" bidirectional line)
 					(alternate "TIM5_CH1" bidirectional line)
-				)
-				(pin bidirectional line
-					(at -17.78 -43.18 0)
-					(length 2.54)
-					(name "PC14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "RCC_OSC32_IN" bidirectional line)
 				)
 				(pin bidirectional line
 					(at 17.78 -33.02 180)
@@ -1241,27 +1396,6 @@
 					(alternate "TIM8_CH1" bidirectional line)
 				)
 				(pin bidirectional line
-					(at -17.78 -45.72 0)
-					(length 2.54)
-					(name "PC15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC1_EXTI15" bidirectional line)
-					(alternate "ADC2_EXTI15" bidirectional line)
-					(alternate "RCC_OSC32_OUT" bidirectional line)
-				)
-				(pin bidirectional line
 					(at -17.78 -27.94 0)
 					(length 2.54)
 					(name "PC8"
@@ -1506,30 +1640,6 @@
 					(alternate "UART4_DE" bidirectional line)
 					(alternate "UART4_RTS" bidirectional line)
 					(alternate "USART2_RX" bidirectional line)
-				)
-				(pin bidirectional line
-					(at -17.78 10.16 0)
-					(length 2.54)
-					(name "PF0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC1_IN10" bidirectional line)
-					(alternate "I2C2_SDA" bidirectional line)
-					(alternate "I2S2_WS" bidirectional line)
-					(alternate "RCC_OSC_IN" bidirectional line)
-					(alternate "SPI2_NSS" bidirectional line)
-					(alternate "TIM1_CH3N" bidirectional line)
 				)
 				(pin bidirectional line
 					(at -17.78 30.48 0)
@@ -1829,29 +1939,6 @@
 					(alternate "USART1_TX" bidirectional line)
 				)
 				(pin bidirectional line
-					(at -17.78 7.62 0)
-					(length 2.54)
-					(name "PF1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC2_IN10" bidirectional line)
-					(alternate "COMP3_INM" bidirectional line)
-					(alternate "I2S2_CK" bidirectional line)
-					(alternate "RCC_OSC_OUT" bidirectional line)
-					(alternate "SPI2_SCK" bidirectional line)
-				)
-				(pin bidirectional line
 					(at 17.78 -25.4 180)
 					(length 2.54)
 					(name "PB7"
@@ -1944,87 +2031,25 @@
 					(alternate "TIM8_CH3" bidirectional line)
 					(alternate "USART3_TX" bidirectional line)
 				)
-				(pin bidirectional line
-					(at -17.78 27.94 0)
-					(length 2.54)
-					(name "PG10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "DAC1_EXTI10" bidirectional line)
-					(alternate "DAC2_EXTI10" bidirectional line)
-					(alternate "DAC3_EXTI10" bidirectional line)
-					(alternate "DAC4_EXTI10" bidirectional line)
-					(alternate "RCC_MCO" bidirectional line)
-				)
-				(pin bidirectional line
-					(at -17.78 -7.62 0)
-					(length 2.54)
-					(name "PC0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC2_IN5" bidirectional line)
-					(alternate "I2C2_SCL" bidirectional line)
-					(alternate "QUADSPI1_BK2_IO3" bidirectional line)
-					(alternate "TIM1_ETR" bidirectional line)
-					(alternate "USART1_TX" bidirectional line)
-				)
-				(pin bidirectional line
-					(at -17.78 -10.16 0)
-					(length 2.54)
-					(name "PC1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "ADC2_IN5" bidirectional line)
-					(alternate "I2C2_SCL" bidirectional line)
-					(alternate "QUADSPI1_BK2_IO3" bidirectional line)
-					(alternate "TIM1_ETR" bidirectional line)
-					(alternate "USART1_TX" bidirectional line)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "C"
 				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2034,6 +2059,8 @@
 			)
 			(property "Value" "C"
 				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2043,53 +2070,63 @@
 			)
 			(property "Footprint" ""
 				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Unpolarized capacitor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "cap capacitor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -2101,7 +2138,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -2116,7 +2153,7 @@
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2134,7 +2171,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2150,16 +2187,25 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "C"
 				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2169,6 +2215,8 @@
 			)
 			(property "Value" "C_Small"
 				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2178,62 +2226,60 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "capacitor cap"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "C_Small_0_1"
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3302)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -1.524 0.508) (xy 1.524 0.508)
@@ -2246,12 +2292,24 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "C_Small_1_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 2.032)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2269,7 +2327,7 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 2.032)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2285,17 +2343,24 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
 				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2304,6 +2369,8 @@
 			)
 			(property "Value" "R"
 				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2312,47 +2379,57 @@
 			)
 			(property "Footprint" ""
 				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "R_0_1"
@@ -2372,7 +2449,7 @@
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2390,7 +2467,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2406,26 +2483,1032 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "GND_1"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
+		(symbol "EasyEDA:STM32F101C8T6"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
+				)
+			)
+			(property "Value" "STM32F101C8T6"
+				(at 0 -43.18 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "EasyEDA:LQFP-48_L7.0-W7.0-P0.50-LS9.0-BL"
+				(at 0 -45.72 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/ST-Microelectronics_STMicroelectronics_STM32F101C8T6_STM32F101C8T6_C8343.html"
+				(at 0 -48.26 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "ARM Cortex-M3 32-bit MCU, 64 KB Flash, 10 KB Internal RAM, 37 IOs, 48-pin LQFP, -40 to 85 degC, Tray"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "ST(意法半导体)"
+				(at 0 -50.8 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "STM32F101C8T6"
+				(at 0 -53.34 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C8343"
+				(at 0 -55.88 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "ST Microelectronics"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "STM32F101C8T6_1_1"
+				(rectangle
+					(start -15.24 30.48)
+					(end 15.24 -32.77)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -17.78 0)
+					(length 5.08)
+					(name "PC13-TAMPER-RTC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -20.32 0)
+					(length 5.08)
+					(name "PC14-OSC32_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -22.86 0)
+					(length 5.08)
+					(name "PC15-OSC32_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -27.94 0)
+					(length 5.08)
+					(name "PD0-OSC_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -30.48 0)
+					(length 5.08)
+					(name "PD1-OSC_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -30.48 180)
+					(length 5.08)
+					(name "NRST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 27.94 0)
+					(length 5.08)
+					(name "PA0-WKUP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 25.4 0)
+					(length 5.08)
+					(name "PA1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 22.86 0)
+					(length 5.08)
+					(name "PA2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 20.32 0)
+					(length 5.08)
+					(name "PA3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 17.78 0)
+					(length 5.08)
+					(name "PA4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 15.24 0)
+					(length 5.08)
+					(name "PA5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 12.7 0)
+					(length 5.08)
+					(name "PA6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 10.16 0)
+					(length 5.08)
+					(name "PA7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 27.94 180)
+					(length 5.08)
+					(name "PB0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 25.4 180)
+					(length 5.08)
+					(name "PB1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 22.86 180)
+					(length 5.08)
+					(name "PB2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "PB10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -2.54 180)
+					(length 5.08)
+					(name "PB11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -5.08 180)
+					(length 5.08)
+					(name "PB12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -7.62 180)
+					(length 5.08)
+					(name "PB13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -10.16 180)
+					(length 5.08)
+					(name "PB14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 -12.7 180)
+					(length 5.08)
+					(name "PB15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 5.08 0)
+					(length 5.08)
+					(name "PA8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 2.54 0)
+					(length 5.08)
+					(name "PA9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 0 0)
+					(length 5.08)
+					(name "PA10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -2.54 0)
+					(length 5.08)
+					(name "PA11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -5.08 0)
+					(length 5.08)
+					(name "PA12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -7.62 0)
+					(length 5.08)
+					(name "PA13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -10.16 0)
+					(length 5.08)
+					(name "PA14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -20.32 -12.7 0)
+					(length 5.08)
+					(name "PA15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 20.32 180)
+					(length 5.08)
+					(name "PB3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 17.78 180)
+					(length 5.08)
+					(name "PB4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 15.24 180)
+					(length 5.08)
+					(name "PB5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "41"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 12.7 180)
+					(length 5.08)
+					(name "PB6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "42"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 10.16 180)
+					(length 5.08)
+					(name "PB7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "43"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 20.32 -25.4 180)
+					(length 5.08)
+					(name "BOOT0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "44"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 5.08 180)
+					(length 5.08)
+					(name "PB8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "45"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 20.32 2.54 180)
+					(length 5.08)
+					(name "PB9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "46"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "STM32F101C8T6_2_1"
+				(rectangle
+					(start 0 1.27)
+					(end 20.32 -18.8)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -5.08 -1.27 0)
+					(length 5.08)
+					(name "VBAT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 25.4 -16.51 180)
+					(length 5.08)
+					(name "VSSA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 -16.51 0)
+					(length 5.08)
+					(name "VDDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 25.4 -6.35 180)
+					(length 5.08)
+					(name "VSS_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 -6.35 0)
+					(length 5.08)
+					(name "VDD_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 25.4 -8.89 180)
+					(length 5.08)
+					(name "VSS_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 -8.89 0)
+					(length 5.08)
+					(name "VDD_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 25.4 -11.43 180)
+					(length 5.08)
+					(name "VSS_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "47"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 -11.43 0)
+					(length 5.08)
+					(name "VDD_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "48"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GND_1"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
 			(property "Value" "GND"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2434,38 +3517,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_1_0_1"
@@ -2486,7 +3577,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2502,26 +3593,37 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3V3"
-			(power)
-			(pin_numbers hide)
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "+3V3"
 				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2530,56 +3632,52 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"+3V3\""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "+3V3_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -2601,12 +3699,24 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2622,7 +3732,147 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 151.13 30.48)
+		(end 281.94 149.86)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "9a40dd59-dfc2-4f2d-8f95-06fe2c6725cd")
+	)
+	(rectangle
+		(start 16.51 30.48)
+		(end 147.32 149.86)
+		(stroke
+			(width 1)
+			(type default)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "bb86d4de-8a6c-49fd-bb3c-0c8f9cc72e55")
+	)
+	(text "J. Pieper ADC investigation"
+		(exclude_from_sim no)
+		(at 142.24 170.18 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+			(href "https://jpieper.com/2023/07/24/stm32g4-adc-performance-part-2/")
+		)
+		(uuid "9b3ecc35-3df2-428b-a29e-c6c2c744422e")
+	)
+	(text "STM32G474 Datasheet p.81"
+		(exclude_from_sim no)
+		(at 142.24 166.37 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+			(href "https://www.st.com/resource/en/datasheet/stm32g474cb.pdf")
+		)
+		(uuid "e6fea1fe-2cf8-4a39-929e-14f4aedafb02")
+	)
+	(text "AN5346"
+		(exclude_from_sim no)
+		(at 142.24 162.56 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left bottom)
+			(href "https://www.st.com/resource/en/application_note/an5346-stm32g4-adc-use-tips-and-recommendations-stmicroelectronics.pdf")
+		)
+		(uuid "f25578fd-4ab6-4599-95bc-eaa8a509f479")
+	)
+	(text_box "MCU GPIOs"
+		(exclude_from_sim no)
+		(at 151.13 139.7 0)
+		(size 130.81 7.62)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "029123ce-54d6-467d-986d-0af7f18ee707")
+	)
+	(text_box "[${#}] ${TITLE}"
+		(exclude_from_sim no)
+		(at 12.7 15.24 0)
+		(size 271.78 12.7)
+		(margins 4.4999 4.4999 4.4999 4.4999)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 6 6)
+				(thickness 1.2)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+		)
+		(uuid "b2c13488-4f2f-433b-bdc6-d210d1646aca")
+	)
+	(text_box "MCU Power Supply Scheme"
+		(exclude_from_sim no)
+		(at 16.51 139.7 0)
+		(size 130.81 7.62)
+		(margins 1.9049 1.9049 1.9049 1.9049)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Times New Roman")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+				(color 162 22 34 1)
+			)
+			(justify bottom)
+		)
+		(uuid "b610ad11-6470-4e17-bb6a-df05c5ad2515")
 	)
 	(junction
 		(at 60.96 78.74)
@@ -2783,6 +4033,10 @@
 		(uuid "01f4f569-3c9c-4ad8-9207-49c692a5fa8d")
 	)
 	(no_connect
+		(at 194.31 77.47)
+		(uuid "05d4f45a-262f-4b52-92b2-bff750d7fc2d")
+	)
+	(no_connect
 		(at 232.41 102.87)
 		(uuid "06b2e088-ae7e-48c0-b673-2ea7c107ce93")
 	)
@@ -2795,6 +4049,14 @@
 		(uuid "08874a86-c49b-4029-baf7-24ae14089eab")
 	)
 	(no_connect
+		(at 153.67 80.01)
+		(uuid "0f190176-00ed-4f58-8382-1038f4c881d9")
+	)
+	(no_connect
+		(at 273.05 127)
+		(uuid "149e300b-68e9-4be8-8378-cd26fdc5637c")
+	)
+	(no_connect
 		(at 232.41 100.33)
 		(uuid "1a435b18-69ef-4c86-8b94-fd20f6bda842")
 	)
@@ -2803,8 +4065,28 @@
 		(uuid "1f428825-b271-4a20-a91c-ea1740f110e2")
 	)
 	(no_connect
+		(at 153.67 110.49)
+		(uuid "22545963-90b2-4311-b621-d0e97386b552")
+	)
+	(no_connect
+		(at 273.05 132.08)
+		(uuid "27115ca3-2acb-4e31-a85b-bc07868c445a")
+	)
+	(no_connect
+		(at 153.67 85.09)
+		(uuid "2e092bc9-b641-4e92-a81b-820e501e97ca")
+	)
+	(no_connect
 		(at 232.41 118.11)
 		(uuid "2f462bdf-a821-4754-9880-eb5bccc458f2")
+	)
+	(no_connect
+		(at 153.67 77.47)
+		(uuid "30c0f1c8-2c5c-4113-aa99-c53339c7b847")
+	)
+	(no_connect
+		(at 153.67 95.25)
+		(uuid "351d1a43-7044-41e4-a20a-e5af0dc64d36")
 	)
 	(no_connect
 		(at 232.41 69.85)
@@ -2827,6 +4109,14 @@
 		(uuid "46405f27-550f-411b-b1d4-ae47b66672c1")
 	)
 	(no_connect
+		(at 153.67 102.87)
+		(uuid "46993a92-dbb4-4574-9880-3e58e1ab0032")
+	)
+	(no_connect
+		(at 194.31 85.09)
+		(uuid "48d728c1-7ea1-406d-b1af-8086d48d1db7")
+	)
+	(no_connect
 		(at 232.41 130.81)
 		(uuid "4a5b07ce-192c-4a56-96b4-09693d89a413")
 	)
@@ -2839,8 +4129,24 @@
 		(uuid "506fce8a-35f3-41c2-995a-b958b21c7732")
 	)
 	(no_connect
+		(at 194.31 90.17)
+		(uuid "51117b90-dd4c-4c11-a2fc-b33e3b797694")
+	)
+	(no_connect
+		(at 194.31 100.33)
+		(uuid "53452941-326f-4763-acbd-16c28bd12def")
+	)
+	(no_connect
+		(at 194.31 105.41)
+		(uuid "58a8795f-da96-46a0-8122-45584b00dfd3")
+	)
+	(no_connect
 		(at 196.85 130.81)
 		(uuid "591a6cd3-a8e8-4e7a-9ea4-69702c7721ec")
+	)
+	(no_connect
+		(at 153.67 113.03)
+		(uuid "5a6bb8ca-1786-42f9-aa9c-9f656c180772")
 	)
 	(no_connect
 		(at 232.41 107.95)
@@ -2851,12 +4157,40 @@
 		(uuid "5ce54463-a25c-4bc6-a6d4-a3466d857779")
 	)
 	(no_connect
+		(at 194.31 87.63)
+		(uuid "5e75654f-506d-4696-aa8a-63c367c071c9")
+	)
+	(no_connect
+		(at 194.31 82.55)
+		(uuid "6053d783-191f-44af-8490-6067019a34aa")
+	)
+	(no_connect
 		(at 196.85 123.19)
 		(uuid "705f18a4-942e-41ca-9c7e-e07fb07789ae")
 	)
 	(no_connect
+		(at 153.67 128.27)
+		(uuid "71f2a05f-f8d6-4613-9d15-d397f2e2a9bc")
+	)
+	(no_connect
+		(at 194.31 115.57)
+		(uuid "73c04d81-0e8b-4b91-8990-40d59bb12527")
+	)
+	(no_connect
+		(at 153.67 100.33)
+		(uuid "755e16d4-09e6-4781-940e-15905ddce022")
+	)
+	(no_connect
+		(at 153.67 133.35)
+		(uuid "7840affb-3cd5-489e-97e9-68cdb13c83e6")
+	)
+	(no_connect
 		(at 232.41 128.27)
 		(uuid "78901948-9956-454e-99b9-de63d42b8901")
+	)
+	(no_connect
+		(at 153.67 92.71)
+		(uuid "789e0ba0-72a2-4642-819d-fcf49053858e")
 	)
 	(no_connect
 		(at 196.85 107.95)
@@ -2867,6 +4201,18 @@
 		(uuid "7fd60279-60f2-495d-93af-8dc93047c9ab")
 	)
 	(no_connect
+		(at 194.31 102.87)
+		(uuid "7fe5b949-e3dd-40ce-8d75-9c4d2a0b5c48")
+	)
+	(no_connect
+		(at 153.67 90.17)
+		(uuid "84439675-7fd4-4867-b6b0-655df334029f")
+	)
+	(no_connect
+		(at 242.57 121.92)
+		(uuid "8a372201-6974-4d10-b4ad-d6fe71e6df03")
+	)
+	(no_connect
 		(at 232.41 123.19)
 		(uuid "8c20e249-b64c-4d65-acee-c5849d877553")
 	)
@@ -2875,8 +4221,20 @@
 		(uuid "8c300c24-32ea-43cf-919a-0ecf438c390c")
 	)
 	(no_connect
+		(at 153.67 105.41)
+		(uuid "8cdce9b4-bb37-4360-9bd9-e2c531e80730")
+	)
+	(no_connect
 		(at 232.41 52.07)
 		(uuid "8f15ba9c-8d65-4a47-8892-9d8f64bfa9a8")
+	)
+	(no_connect
+		(at 194.31 113.03)
+		(uuid "917ef4da-c59a-4aa5-884f-0100393ae71f")
+	)
+	(no_connect
+		(at 153.67 123.19)
+		(uuid "95331f86-5aa4-41d2-b525-3652aed78ce0")
 	)
 	(no_connect
 		(at 232.41 113.03)
@@ -2891,12 +4249,24 @@
 		(uuid "9a7b62be-5c4c-4b53-9601-2b405bfb2c12")
 	)
 	(no_connect
+		(at 273.05 137.16)
+		(uuid "9e71365d-56bf-4553-a32f-2a2fe040400c")
+	)
+	(no_connect
 		(at 196.85 113.03)
 		(uuid "a303ada6-de86-43a8-8c5c-567f154a7c2f")
 	)
 	(no_connect
 		(at 196.85 128.27)
 		(uuid "a39fd292-f008-4ca0-8607-ed30ed895784")
+	)
+	(no_connect
+		(at 153.67 82.55)
+		(uuid "a3a79652-4b4a-4aa4-89a0-98589834be76")
+	)
+	(no_connect
+		(at 242.57 129.54)
+		(uuid "a4486b05-da2a-40bb-862c-e7bd6b3fe944")
 	)
 	(no_connect
 		(at 232.41 85.09)
@@ -2907,16 +4277,56 @@
 		(uuid "adb1cc9c-6dd4-44f2-8297-6780e1da3763")
 	)
 	(no_connect
+		(at 242.57 137.16)
+		(uuid "b3bda4c2-2415-4ac7-bace-2808fd68f977")
+	)
+	(no_connect
 		(at 196.85 105.41)
 		(uuid "b6d7c1e8-9c7e-4488-a16e-12cde9186d8c")
+	)
+	(no_connect
+		(at 153.67 115.57)
+		(uuid "b9270d5d-e170-4322-97f4-a6eb0f7f617a")
 	)
 	(no_connect
 		(at 196.85 97.79)
 		(uuid "bca73e9e-fea0-476f-baeb-6094a6a0b130")
 	)
 	(no_connect
+		(at 194.31 110.49)
+		(uuid "bcc4b06c-7554-4b9b-a4af-f3f0aa580dfb")
+	)
+	(no_connect
+		(at 194.31 130.81)
+		(uuid "c32fa1f0-63a9-479c-baad-c746e3fc2bd7")
+	)
+	(no_connect
+		(at 194.31 80.01)
+		(uuid "c697b67a-275e-4074-8f98-e25129198a79")
+	)
+	(no_connect
 		(at 232.41 82.55)
 		(uuid "cb17483e-d799-4a32-888c-387dd062a14d")
+	)
+	(no_connect
+		(at 194.31 107.95)
+		(uuid "d144a245-2229-4a98-aad2-ede50f4e765e")
+	)
+	(no_connect
+		(at 194.31 95.25)
+		(uuid "d369f028-668d-4dbe-a9ac-b60c573928eb")
+	)
+	(no_connect
+		(at 153.67 135.89)
+		(uuid "d402616b-9f15-45ab-a57f-55de4e68e2a5")
+	)
+	(no_connect
+		(at 194.31 92.71)
+		(uuid "d50e5e74-eb03-42ae-b482-61bed9bde7ba")
+	)
+	(no_connect
+		(at 153.67 87.63)
+		(uuid "d5f95fa1-a3a2-4448-b855-6668ed3367a8")
 	)
 	(no_connect
 		(at 196.85 85.09)
@@ -2935,8 +4345,32 @@
 		(uuid "dea0adb9-d53b-4aec-bff4-80b0d9d084b2")
 	)
 	(no_connect
+		(at 153.67 118.11)
+		(uuid "e29324f7-3f7b-4171-b99f-e39e5fa2f899")
+	)
+	(no_connect
+		(at 273.05 129.54)
+		(uuid "e6ba61f0-3996-4fa0-a660-08479bbdd0e3")
+	)
+	(no_connect
 		(at 232.41 105.41)
 		(uuid "ecb73e14-ecd3-4e87-9b9e-34cf82449400")
+	)
+	(no_connect
+		(at 153.67 125.73)
+		(uuid "ee3d30cb-ab4f-4607-964f-d9c3d85feb50")
+	)
+	(no_connect
+		(at 194.31 118.11)
+		(uuid "ef174ac5-b325-485a-aec6-0d5fd4466a20")
+	)
+	(no_connect
+		(at 153.67 107.95)
+		(uuid "f1e41db4-27dd-423b-a149-3c3b3071d7b3")
+	)
+	(no_connect
+		(at 242.57 132.08)
+		(uuid "f6e0ef7e-1fb3-43c9-961b-9dc5a9a352bf")
 	)
 	(no_connect
 		(at 196.85 110.49)
@@ -2947,8 +4381,16 @@
 		(uuid "fdff4585-edbe-4740-ad7e-1c7db185756a")
 	)
 	(no_connect
+		(at 242.57 127)
+		(uuid "ff016dbf-4824-49f3-b3d9-e076073cc20b")
+	)
+	(no_connect
 		(at 232.41 110.49)
 		(uuid "ff28c423-7f1b-44d1-9f7d-3ed32b138f03")
+	)
+	(no_connect
+		(at 194.31 135.89)
+		(uuid "ff70160d-4591-4f54-92cb-fd02ad95c45e")
 	)
 	(no_connect
 		(at 232.41 64.77)
@@ -3957,145 +5399,8 @@
 		)
 		(uuid "fad1c405-2249-4e61-b397-4d4fe39e34fd")
 	)
-	(rectangle
-		(start 151.13 30.48)
-		(end 281.94 149.86)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 9a40dd59-dfc2-4f2d-8f95-06fe2c6725cd)
-	)
-	(rectangle
-		(start 16.51 30.48)
-		(end 147.32 149.86)
-		(stroke
-			(width 1)
-			(type default)
-			(color 200 200 200 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid bb86d4de-8a6c-49fd-bb3c-0c8f9cc72e55)
-	)
-	(text_box "MCU GPIOs"
-		(exclude_from_sim no)
-		(at 151.13 139.7 0)
-		(size 130.81 7.62)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "029123ce-54d6-467d-986d-0af7f18ee707")
-	)
-	(text_box "[${#}] ${TITLE}"
-		(exclude_from_sim no)
-		(at 12.7 15.24 0)
-		(size 271.78 12.7)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 6 6)
-				(thickness 1.2)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-		)
-		(uuid "b2c13488-4f2f-433b-bdc6-d210d1646aca")
-	)
-	(text_box "MCU Power Supply Scheme"
-		(exclude_from_sim no)
-		(at 16.51 139.7 0)
-		(size 130.81 7.62)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "Times New Roman")
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 162 22 34 1)
-			)
-			(justify bottom)
-		)
-		(uuid "b610ad11-6470-4e17-bb6a-df05c5ad2515")
-	)
-	(text "J. Pieper ADC investigation"
-		(exclude_from_sim no)
-		(at 142.24 170.18 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-			(href "https://jpieper.com/2023/07/24/stm32g4-adc-performance-part-2/")
-		)
-		(uuid "9b3ecc35-3df2-428b-a29e-c6c2c744422e")
-	)
-	(text "STM32G474 Datasheet p.81"
-		(exclude_from_sim no)
-		(at 142.24 166.37 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-			(href "https://www.st.com/resource/en/datasheet/stm32g474cb.pdf")
-		)
-		(uuid "e6fea1fe-2cf8-4a39-929e-14f4aedafb02")
-	)
-	(text "AN5346"
-		(exclude_from_sim no)
-		(at 142.24 162.56 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify left bottom)
-			(href "https://www.st.com/resource/en/application_note/an5346-stm32g4-adc-use-tips-and-recommendations-stmicroelectronics.pdf")
-		)
-		(uuid "f25578fd-4ab6-4599-95bc-eaa8a509f479")
-	)
 	(label "I2C2_SCL"
 		(at 234.95 74.93 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4107,7 +5412,6 @@
 	)
 	(label "NRST"
 		(at 186.69 57.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4119,7 +5423,6 @@
 	)
 	(label "SWCLK"
 		(at 186.69 54.61 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4131,7 +5434,6 @@
 	)
 	(label "IMU_INT"
 		(at 234.95 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4143,7 +5445,6 @@
 	)
 	(label "IMU_~{RESET}"
 		(at 234.95 80.01 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4155,7 +5456,6 @@
 	)
 	(label "SWDIO"
 		(at 186.69 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4167,7 +5467,6 @@
 	)
 	(label "I2C2_SDA"
 		(at 234.95 72.39 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4180,7 +5479,6 @@
 	(hierarchical_label "{I2C2}"
 		(shape bidirectional)
 		(at 271.78 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4194,7 +5492,6 @@
 	(hierarchical_label "{SWD}"
 		(shape bidirectional)
 		(at 168.91 45.72 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(face "Arial")
@@ -4210,60 +5507,72 @@
 		(lib_id "power:GND")
 		(at 59.69 115.57 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06aee458-7333-4e86-bfa7-50baf333fe3f")
 		(property "Reference" "#PWR04"
 			(at 59.69 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 59.69 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 59.69 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 59.69 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 59.69 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4282,14 +5591,18 @@
 		(lib_id "Device:R")
 		(at 257.81 63.5 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ede8ed8-ae16-41fd-ac27-996b7ecd9e63")
 		(property "Reference" "R2"
 			(at 260.35 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4300,6 +5613,8 @@
 		)
 		(property "Value" "2k 1%"
 			(at 260.35 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4310,90 +5625,108 @@
 		)
 		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
 			(at 256.032 63.5 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 257.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "2 kOhms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
 			(at 257.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier 1" "Digikey"
 			(at 257.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "P2.00KLCT-ND"
 			(at 257.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "Vishay"
 			(at 257.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "ERJ-2RKF2001X"
 			(at 257.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Config" ""
 			(at 257.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number" ""
 			(at 257.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4416,60 +5749,72 @@
 		(lib_id "power:GND")
 		(at 22.86 90.17 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ee7d03a-1912-4b00-954c-2a8bcf6f30b8")
 		(property "Reference" "#PWR02"
 			(at 22.86 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 22.86 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 22.86 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 22.86 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 22.86 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4488,13 +5833,17 @@
 		(lib_id "Device:C")
 		(at 64.77 125.73 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "14a06cb4-9288-4787-95b1-6f3c2fdeb18b")
 		(property "Reference" "C5"
 			(at 68.58 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4505,6 +5854,8 @@
 		)
 		(property "Value" "4u7 X5R 25V"
 			(at 68.58 127 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4515,76 +5866,92 @@
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 65.7352 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.ch/datasheet/2/40/CM_Series_e-2835982.pdf"
 			(at 64.77 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "4.7 µF ±20% 25V Ceramic Capacitor X5R 0402 (1005 Metric)"
 			(at 64.77 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier 1" "Mouser"
 			(at 64.77 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "581-CM05X5R475M25AH"
 			(at 64.77 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "KYOCERA AVX"
 			(at 64.77 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "CM05X5R475M25AH"
 			(at 64.77 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" "0402"
 			(at 64.77 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4594,20 +5961,24 @@
 		)
 		(property "Config" ""
 			(at 64.77 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number" ""
 			(at 64.77 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4629,24 +6000,30 @@
 		(lib_id "power:+3V3")
 		(at 76.2 54.61 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18a33a65-092f-4d99-8059-5d465b6af106")
 		(property "Reference" "#PWR06"
 			(at 76.2 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+3V3"
 			(at 76.2 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4656,39 +6033,45 @@
 		)
 		(property "Footprint" ""
 			(at 76.2 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 76.2 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 76.2 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "3aa33b51-04b1-48ef-b34b-00be5ad564d5")
 		)
 		(instances
-			(project ""
+			(project "KiBot_Project_Test"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "#PWR06")
 					(unit 1)
@@ -4700,13 +6083,17 @@
 		(lib_id "Device:C")
 		(at 64.77 106.68 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "2a207797-9ac8-44c6-8e9d-44f192d13b4f")
 		(property "Reference" "C4"
 			(at 68.58 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4717,6 +6104,8 @@
 		)
 		(property "Value" "1u X7R 10V"
 			(at 68.58 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4727,76 +6116,92 @@
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 65.7352 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155Z71A105KE01-01A.pdf"
 			(at 64.77 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "1 µF ±10% 10V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 64.77 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier 1" "Digikey"
 			(at 64.77 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "490-GRM155Z71A105KE01JCT-ND"
 			(at 64.77 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
 			(at 64.77 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "GRM155Z71A105KE01J"
 			(at 64.77 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" "0402"
 			(at 64.77 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4806,20 +6211,24 @@
 		)
 		(property "Config" ""
 			(at 64.77 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number" ""
 			(at 64.77 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4841,13 +6250,17 @@
 		(lib_id "Device:C_Small")
 		(at 44.45 82.55 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "2e43161c-68dc-4505-9c85-d5b7b5774a4c")
 		(property "Reference" "C2"
 			(at 46.99 81.2863 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4858,6 +6271,8 @@
 		)
 		(property "Value" "100n X7R 50V"
 			(at 46.99 83.8263 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4868,76 +6283,92 @@
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 44.45 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71H104KE02-01.pdf"
 			(at 44.45 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 44.45 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier 1" "Digikey"
 			(at 44.45 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "490-14514-1-ND"
 			(at 44.45 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
 			(at 44.45 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 44.45 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" "0402"
 			(at 44.45 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4947,20 +6378,24 @@
 		)
 		(property "Config" ""
 			(at 44.45 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number" ""
 			(at 44.45 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4982,13 +6417,17 @@
 		(lib_id "Device:C_Small")
 		(at 81.28 106.68 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "3b9983a7-9b87-4c54-9c1f-aa2461a1ef21")
 		(property "Reference" "C8"
 			(at 83.82 105.4163 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -4999,6 +6438,8 @@
 		)
 		(property "Value" "100n X7R 50V"
 			(at 83.82 107.9563 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -5009,76 +6450,92 @@
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 81.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71H104KE02-01.pdf"
 			(at 81.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 81.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier 1" "Digikey"
 			(at 81.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "490-14514-1-ND"
 			(at 81.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
 			(at 81.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 81.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" "0402"
 			(at 81.28 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -5088,20 +6545,24 @@
 		)
 		(property "Config" ""
 			(at 81.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number" ""
 			(at 81.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5123,13 +6584,17 @@
 		(lib_id "0_mcu:STM32G474RETx")
 		(at 110.49 78.74 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "425de6be-fd96-4487-88e9-a8ae1f9ad610")
 		(property "Reference" "U1"
 			(at 124.46 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -5140,6 +6605,8 @@
 		)
 		(property "Value" "STM32G474RET3"
 			(at 96.52 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -5150,87 +6617,105 @@
 		)
 		(property "Footprint" "0_package_QFP:LQFP-64_10x10mm_P0.5mm"
 			(at 137.16 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32g474re.pdf"
 			(at 106.68 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "STMicroelectronics Arm Cortex-M4 MCU, 512KB flash, 128KB RAM, 170 MHz, 1.71-3.6V, 58 GPIO, LQFP64"
 			(at 110.49 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier 1" "Digikey"
 			(at 110.49 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "497-STM32G474RET3-ND"
 			(at 110.49 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "STMicroelectronics"
 			(at 110.49 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "STM32G474RET3"
 			(at 110.49 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Config" ""
 			(at 110.49 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number" ""
 			(at 110.49 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "22"
@@ -5426,7 +6911,7 @@
 			(uuid "883eaaf6-bb95-400b-8807-fed7f6bb04db")
 		)
 		(instances
-			(project ""
+			(project "KiBot_Project_Test"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
 					(reference "U1")
 					(unit 1)
@@ -5438,13 +6923,17 @@
 		(lib_id "Device:C_Small")
 		(at 60.96 82.55 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "5f16c504-efb9-428c-83e0-1617c52b617c")
 		(property "Reference" "C3"
 			(at 63.5 81.2863 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -5455,6 +6944,8 @@
 		)
 		(property "Value" "100n X7R 50V"
 			(at 63.5 83.8263 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -5465,76 +6956,92 @@
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 60.96 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71H104KE02-01.pdf"
 			(at 60.96 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 60.96 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier 1" "Digikey"
 			(at 60.96 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "490-14514-1-ND"
 			(at 60.96 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
 			(at 60.96 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 60.96 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" "0402"
 			(at 60.96 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -5544,20 +7051,24 @@
 		)
 		(property "Config" ""
 			(at 60.96 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number" ""
 			(at 60.96 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5579,14 +7090,18 @@
 		(lib_id "Device:R")
 		(at 247.65 63.5 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "638a40d9-3506-4f6f-9080-eabeb502e4cb")
 		(property "Reference" "R1"
 			(at 250.19 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -5597,6 +7112,8 @@
 		)
 		(property "Value" "2k 1%"
 			(at 250.19 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -5607,90 +7124,108 @@
 		)
 		(property "Footprint" "0_resistor_smd:R_0402_1005_DensityHigh"
 			(at 245.872 63.5 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 247.65 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "2 kOhms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film"
 			(at 247.65 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier 1" "Digikey"
 			(at 247.65 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "P2.00KLCT-ND"
 			(at 247.65 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "Vishay"
 			(at 247.65 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "ERJ-2RKF2001X"
 			(at 247.65 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Config" ""
 			(at 247.65 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number" ""
 			(at 247.65 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5712,13 +7247,17 @@
 		(lib_id "Device:C_Small")
 		(at 77.47 82.55 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "666f51ee-1eae-4884-92f0-9e517ed4a706")
 		(property "Reference" "C6"
 			(at 80.01 81.2863 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -5729,6 +7268,8 @@
 		)
 		(property "Value" "100n X7R 50V"
 			(at 80.01 83.8263 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -5739,76 +7280,92 @@
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 77.47 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71H104KE02-01.pdf"
 			(at 77.47 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 77.47 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier 1" "Digikey"
 			(at 77.47 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "490-14514-1-ND"
 			(at 77.47 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
 			(at 77.47 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 77.47 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" "0402"
 			(at 77.47 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -5818,20 +7375,24 @@
 		)
 		(property "Config" ""
 			(at 77.47 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number" ""
 			(at 77.47 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5853,13 +7414,17 @@
 		(lib_id "Device:C_Small")
 		(at 27.94 82.55 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "69061980-b387-4a75-b6da-7a1d6abd31dc")
 		(property "Reference" "C1"
 			(at 30.48 81.2863 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -5870,6 +7435,8 @@
 		)
 		(property "Value" "100n X7R 50V"
 			(at 30.48 83.8263 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -5880,76 +7447,92 @@
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 27.94 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71H104KE02-01.pdf"
 			(at 27.94 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 27.94 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier 1" "Digikey"
 			(at 27.94 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "490-14514-1-ND"
 			(at 27.94 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
 			(at 27.94 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 27.94 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" "0402"
 			(at 27.94 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -5959,20 +7542,24 @@
 		)
 		(property "Config" ""
 			(at 27.94 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number" ""
 			(at 27.94 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5994,24 +7581,30 @@
 		(lib_id "power:+3V3")
 		(at 257.81 53.34 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b415f91-91ef-4a4d-9be9-cf646a7ea91d")
 		(property "Reference" "#PWR09"
 			(at 257.81 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+3V3"
 			(at 257.81 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6021,32 +7614,38 @@
 		)
 		(property "Footprint" ""
 			(at 257.81 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 257.81 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 257.81 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6062,16 +7661,271 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 81.28 125.73 0)
+		(lib_id "EasyEDA:STM32F101C8T6")
+		(at 173.99 105.41 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70be3f93-88aa-4498-b6d8-85f80f009d4c")
+		(property "Reference" "U4"
+			(at 173.99 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STM32F101C8T6"
+			(at 173.99 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
+			(at 173.99 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/ST-Microelectronics_STMicroelectronics_STM32F101C8T6_STM32F101C8T6_C8343.html"
+			(at 173.99 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ARM Cortex-M3 32-bit MCU, 64 KB Flash, 10 KB Internal RAM, 37 IOs, 48-pin LQFP, -40 to 85 degC, Tray"
+			(at 173.99 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "ST(意法半导体)"
+			(at 173.99 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "STM32F101C8T6"
+			(at 173.99 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C8343"
+			(at 173.99 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "10"
+			(uuid "393627e0-a63c-4ff2-8174-82616df24532")
+		)
+		(pin "14"
+			(uuid "155ee576-56f6-41ee-b410-68e5938c0483")
+		)
+		(pin "42"
+			(uuid "915bfc78-57c9-4ee7-98a6-1d2110b09ac8")
+		)
+		(pin "40"
+			(uuid "223f2550-fe10-4bef-9398-03f807c1debd")
+		)
+		(pin "44"
+			(uuid "e52eca63-1ea3-4d71-8a80-48664d1e0458")
+		)
+		(pin "12"
+			(uuid "adf12710-f39a-4b4d-9461-e093edb31a79")
+		)
+		(pin "33"
+			(uuid "0203b361-f80d-407e-8075-d65a434dce58")
+		)
+		(pin "16"
+			(uuid "1cdf24fb-01d6-4d9c-9405-cdfc29acaa23")
+		)
+		(pin "31"
+			(uuid "8405eb96-499d-4efb-ae0d-09784755d272")
+		)
+		(pin "8"
+			(uuid "aaf323bb-1257-4acb-ae99-67f615411b9c")
+		)
+		(pin "25"
+			(uuid "e2ab7fcc-a267-4438-8661-eb701a0c91cb")
+		)
+		(pin "29"
+			(uuid "8ab64e37-4533-4b88-956d-21c4c62ca133")
+		)
+		(pin "28"
+			(uuid "53f96c70-4414-43db-b3d1-8e8674d408ca")
+		)
+		(pin "21"
+			(uuid "1a2f1b8d-df43-400e-a562-9072b096d452")
+		)
+		(pin "47"
+			(uuid "ddacefce-fdaf-42da-b6a1-95a904cd1519")
+		)
+		(pin "38"
+			(uuid "d7b048bb-cd9f-4bdc-b449-1176944d55e8")
+		)
+		(pin "18"
+			(uuid "9989f495-fffd-4d57-b04c-67517ccbb942")
+		)
+		(pin "37"
+			(uuid "9dbf6de5-5f46-487a-9782-6e1f7c1a7a8f")
+		)
+		(pin "11"
+			(uuid "ec511716-785b-499c-99d5-108a9465d786")
+		)
+		(pin "7"
+			(uuid "db8778d4-3962-421c-bfee-ed7083f8bc63")
+		)
+		(pin "6"
+			(uuid "918effad-13e9-4c6d-b248-8af7b45bda86")
+		)
+		(pin "2"
+			(uuid "67882f2f-9344-431f-a2da-c463b3d81234")
+		)
+		(pin "15"
+			(uuid "5fa9a9bf-4ce5-49aa-ad12-055e90a9fcfe")
+		)
+		(pin "27"
+			(uuid "0aea50e7-c4f0-4261-b745-664a5d04c062")
+		)
+		(pin "43"
+			(uuid "c23cb3df-9212-4852-b833-373f7a8c30d1")
+		)
+		(pin "20"
+			(uuid "1659ab34-76ae-4b25-aa70-597e7bb6fd51")
+		)
+		(pin "34"
+			(uuid "48ee8d73-30da-471e-95f7-8e0d34fc5861")
+		)
+		(pin "19"
+			(uuid "48f7983f-9500-401b-b3c9-14d2df8dc45a")
+		)
+		(pin "46"
+			(uuid "6a9d3b9b-1448-4e8f-8116-8c3e591eaa00")
+		)
+		(pin "39"
+			(uuid "1a4d4239-c500-40cf-8865-ebcabfd5b364")
+		)
+		(pin "26"
+			(uuid "d1b3b5fa-765b-436c-a572-e1055990b6cc")
+		)
+		(pin "9"
+			(uuid "48ec4cc1-d7e2-448b-a54a-3726dee71a71")
+		)
+		(pin "5"
+			(uuid "b4bca16d-6c52-40fa-a06d-9e4b9c73b485")
+		)
+		(pin "45"
+			(uuid "935a79f5-a2eb-41c6-8368-9389fccc0a4f")
+		)
+		(pin "3"
+			(uuid "5c43334d-afb9-424a-a5a6-bb8f29dcddfd")
+		)
+		(pin "35"
+			(uuid "ed14b218-1c6e-4f7e-a52f-4f093441c6be")
+		)
+		(pin "4"
+			(uuid "8dd305f5-89ae-4ee3-95ea-0d680a645d4c")
+		)
+		(pin "41"
+			(uuid "b5fb673e-acee-4294-8f90-6af4635b3238")
+		)
+		(pin "36"
+			(uuid "650a028f-df12-4637-a145-5600196def5b")
+		)
+		(pin "17"
+			(uuid "61e84355-f7f0-4d35-a28d-7d541554bc28")
+		)
+		(pin "1"
+			(uuid "6db41c39-34ad-478c-95ca-f897527bff1c")
+		)
+		(pin "22"
+			(uuid "9b0395da-67b9-414e-9d34-ad60f0f9e727")
+		)
+		(pin "13"
+			(uuid "73bf4799-dacf-4cf9-a916-7343bf981e2f")
+		)
+		(pin "48"
+			(uuid "3c89840b-d7ec-48d0-8a53-8e40fb75af01")
+		)
+		(pin "32"
+			(uuid "769ead54-8e48-4349-bc10-f41ddee9358d")
+		)
+		(pin "23"
+			(uuid "cdcd9b34-308a-4b35-b48a-99224c110aab")
+		)
+		(pin "30"
+			(uuid "878cc5a4-4d63-43bc-89d3-e5c1d26a1358")
+		)
+		(pin "24"
+			(uuid "f378c04f-7d97-4f13-bf6f-fb97ce515453")
+		)
+		(instances
+			(project "KiBot_Project_Test"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 81.28 125.73 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "763e72cd-d856-4045-9b7f-48be59744618")
 		(property "Reference" "C9"
 			(at 83.82 124.4663 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6082,6 +7936,8 @@
 		)
 		(property "Value" "100n X7R 50V"
 			(at 83.82 127.0063 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6092,76 +7948,92 @@
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 81.28 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71H104KE02-01.pdf"
 			(at 81.28 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 81.28 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier 1" "Digikey"
 			(at 81.28 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "490-14514-1-ND"
 			(at 81.28 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
 			(at 81.28 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 81.28 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" "0402"
 			(at 81.28 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6171,20 +8043,24 @@
 		)
 		(property "Config" ""
 			(at 81.28 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number" ""
 			(at 81.28 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6206,13 +8082,17 @@
 		(lib_id "0_mcu:STM32G474RETx")
 		(at 214.63 85.09 0)
 		(unit 2)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "82f9ede2-bfd8-4c71-ba65-c790800e7095")
 		(property "Reference" "U1"
 			(at 227.33 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6222,6 +8102,8 @@
 		)
 		(property "Value" "STM32G474RET3"
 			(at 207.01 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6231,89 +8113,107 @@
 		)
 		(property "Footprint" "0_package_QFP:LQFP-64_10x10mm_P0.5mm"
 			(at 241.3 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32g474re.pdf"
 			(at 210.82 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "STMicroelectronics Arm Cortex-M4 MCU, 512KB flash, 128KB RAM, 170 MHz, 1.71-3.6V, 58 GPIO, LQFP64"
 			(at 214.63 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier 1" "Digikey"
 			(at 214.63 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "497-STM32G474RET3-ND"
 			(at 214.63 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "STMicroelectronics"
 			(at 214.63 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "STM32G474RET3"
 			(at 214.63 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Config" ""
 			(at 214.63 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number" ""
 			(at 214.63 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6521,24 +8421,30 @@
 		(lib_id "power:+3V3")
 		(at 22.86 76.2 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d21835b-6fd1-491c-b561-7fbd240764d5")
 		(property "Reference" "#PWR01"
 			(at 22.86 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+3V3"
 			(at 22.86 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6548,32 +8454,38 @@
 		)
 		(property "Footprint" ""
 			(at 22.86 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 22.86 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 22.86 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6589,64 +8501,327 @@
 		)
 	)
 	(symbol
+		(lib_id "EasyEDA:STM32F101C8T6")
+		(at 247.65 120.65 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b9bdb2b6-e7e0-44b0-8dff-563e11e08f1a")
+		(property "Reference" "U4"
+			(at 257.81 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STM32F101C8T6"
+			(at 257.81 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
+			(at 247.65 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/ST-Microelectronics_STMicroelectronics_STM32F101C8T6_STM32F101C8T6_C8343.html"
+			(at 247.65 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ARM Cortex-M3 32-bit MCU, 64 KB Flash, 10 KB Internal RAM, 37 IOs, 48-pin LQFP, -40 to 85 degC, Tray"
+			(at 247.65 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "ST(意法半导体)"
+			(at 247.65 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "STM32F101C8T6"
+			(at 247.65 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C8343"
+			(at 247.65 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "35"
+			(uuid "aa5c16c3-b7cf-4078-9131-715ae0c9d9e7")
+		)
+		(pin "6"
+			(uuid "246c8482-f4d1-4220-a3f7-155a5a42eff3")
+		)
+		(pin "28"
+			(uuid "c2028ca0-bf4b-4646-abdb-36f0aac5d60a")
+		)
+		(pin "17"
+			(uuid "fda818d9-20eb-4d7e-a8e7-79f4894586f0")
+		)
+		(pin "26"
+			(uuid "b0d74e95-66a4-4fab-a176-8703678c3ae0")
+		)
+		(pin "22"
+			(uuid "9d522463-87ed-430a-91f3-715a5fd3affc")
+		)
+		(pin "29"
+			(uuid "3b3b239b-108b-4283-a645-ab8fd2cb3531")
+		)
+		(pin "12"
+			(uuid "1f914900-465a-4d8d-85ea-722ab9488a9b")
+		)
+		(pin "8"
+			(uuid "846a2e58-49b5-4da0-bc3a-15683189a736")
+		)
+		(pin "43"
+			(uuid "d087b582-3811-4874-971d-08359c20884d")
+		)
+		(pin "11"
+			(uuid "355cd0c5-a759-43ce-b437-67230f3c00ad")
+		)
+		(pin "39"
+			(uuid "611012dd-e815-4cb7-95ec-fa10fcf379ef")
+		)
+		(pin "3"
+			(uuid "d26b32ca-12ae-4cd9-bbd1-686520f04a19")
+		)
+		(pin "19"
+			(uuid "bb6f77ef-c6de-4143-92cd-d5dba7e7d24c")
+		)
+		(pin "30"
+			(uuid "026401cd-8087-4372-adab-8f77fe5d016b")
+		)
+		(pin "15"
+			(uuid "2d41816f-eb57-4684-bdce-a2e63d5a3323")
+		)
+		(pin "13"
+			(uuid "e3c177d4-abdb-4d47-9225-1387dcb235bf")
+		)
+		(pin "27"
+			(uuid "1cb76fb9-fe33-45bd-bd67-fbe2dfa0ade8")
+		)
+		(pin "14"
+			(uuid "bed0ae04-ca3b-4caf-8684-6fc5cb2cca84")
+		)
+		(pin "10"
+			(uuid "1af0b7dd-6b48-4d5b-8113-ede2de14a057")
+		)
+		(pin "20"
+			(uuid "bf94bbef-49fe-459c-81f8-dafa4ae68195")
+		)
+		(pin "34"
+			(uuid "8bd3b519-e235-4389-a735-c96c6941766c")
+		)
+		(pin "32"
+			(uuid "070f074f-f33b-4178-8103-1cf3bdb7b312")
+		)
+		(pin "41"
+			(uuid "984a92ff-d91f-40ff-97c6-210dfc14a7ef")
+		)
+		(pin "40"
+			(uuid "a6626748-8961-4ecb-ab5f-3ac2b43ab3a7")
+		)
+		(pin "1"
+			(uuid "17db659a-2e74-44b3-833f-34f50ba0edff")
+		)
+		(pin "44"
+			(uuid "9bea7054-9ffb-4728-b98e-fbf8b05f63f0")
+		)
+		(pin "47"
+			(uuid "8b98b72e-cb04-42ab-8f32-f9d9b0fc81ad")
+		)
+		(pin "45"
+			(uuid "609ee542-0c40-464d-b05a-fc3879e63dea")
+		)
+		(pin "48"
+			(uuid "84e85a70-30c0-4af3-98c5-8ad28046c4b8")
+		)
+		(pin "5"
+			(uuid "f9721fb1-d51e-4c48-9619-491b3d60bbe9")
+		)
+		(pin "24"
+			(uuid "99b0c6d0-af4f-473b-9115-b305a17baa58")
+		)
+		(pin "33"
+			(uuid "65026687-2928-476c-b2a3-c0011cf72d89")
+		)
+		(pin "7"
+			(uuid "45e9c5d4-3d4a-4505-bcaa-8ecddb5f63fe")
+		)
+		(pin "38"
+			(uuid "5719d74f-8123-4f27-950d-b5203ef36968")
+		)
+		(pin "4"
+			(uuid "29f801db-c752-4d6f-b05c-732ec3a38eb7")
+		)
+		(pin "16"
+			(uuid "9683441b-610e-4ba1-b049-04af6a589315")
+		)
+		(pin "46"
+			(uuid "9745d94e-8c17-478c-9967-5400805facf3")
+		)
+		(pin "18"
+			(uuid "ec667585-d0d4-4e48-bcb8-6c18d0aa7f32")
+		)
+		(pin "37"
+			(uuid "1db60655-edb6-4567-b28e-dcf4574298ca")
+		)
+		(pin "36"
+			(uuid "895e4e1a-13aa-4b2e-8656-3b412d5d6293")
+		)
+		(pin "42"
+			(uuid "b0fabac1-859c-4f9e-ac0d-44d78b0202b7")
+		)
+		(pin "9"
+			(uuid "7ac74dbd-52b5-4d6f-85b9-5368758bec1f")
+		)
+		(pin "23"
+			(uuid "bb9a81c2-097f-469f-b4c4-9bd7c098739d")
+		)
+		(pin "25"
+			(uuid "0d3608e8-0755-4155-beac-f5aa9b38eb56")
+		)
+		(pin "2"
+			(uuid "3b26fdec-b5d1-40ab-a579-818527887844")
+		)
+		(pin "31"
+			(uuid "b94fbc16-6088-439b-a333-e779eab8d616")
+		)
+		(pin "21"
+			(uuid "2fac3b3c-39d8-449d-91d4-2566b5153369")
+		)
+		(instances
+			(project "KiBot_Project_Test"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e/f06537ee-772d-44d3-8c50-e0ba41038c9c"
+					(reference "U4")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
 		(at 60.96 132.08 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dfdb0ae4-e594-4ff2-b53c-530cebd25713")
 		(property "Reference" "#PWR05"
 			(at 60.96 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 60.96 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 60.96 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 60.96 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 60.96 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6665,24 +8840,30 @@
 		(lib_id "power:+3V3")
 		(at 44.45 97.79 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0b0163d-a332-48c5-a65f-29c13de7b6af")
 		(property "Reference" "#PWR03"
 			(at 44.45 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+3V3"
 			(at 44.45 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6692,32 +8873,38 @@
 		)
 		(property "Footprint" ""
 			(at 44.45 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 44.45 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 44.45 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6736,13 +8923,17 @@
 		(lib_id "Device:C")
 		(at 81.28 63.5 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e1ea42c9-81da-430f-b8ab-9a7da8f4834d")
 		(property "Reference" "C7"
 			(at 85.09 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6753,6 +8944,8 @@
 		)
 		(property "Value" "1u X7R 10V"
 			(at 85.09 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6763,76 +8956,92 @@
 		)
 		(property "Footprint" "0_capacitor_smd:C_0402_1005_DensityHigh"
 			(at 82.2452 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155Z71A105KE01-01A.pdf"
 			(at 81.28 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "1 µF ±10% 10V Ceramic Capacitor X7R 0402 (1005 Metric)"
 			(at 81.28 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier 1" "Digikey"
 			(at 81.28 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number 1" "490-GRM155Z71A105KE01JCT-ND"
 			(at 81.28 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
 			(at 81.28 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer Part Number" "GRM155Z71A105KE01J"
 			(at 81.28 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Package" "0402"
 			(at 81.28 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
@@ -6842,20 +9051,24 @@
 		)
 		(property "Config" ""
 			(at 81.28 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Supplier Part Number" ""
 			(at 81.28 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6878,60 +9091,72 @@
 		(lib_id "power:GND")
 		(at 116.84 130.81 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5dd48d0-a304-410f-91ce-a2717b7115fe")
 		(property "Reference" "#PWR08"
 			(at 116.84 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 116.84 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 116.84 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 116.84 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 116.84 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6951,60 +9176,72 @@
 		(lib_id "power:GND")
 		(at 76.2 72.39 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eb0a576c-4f84-4f9f-a4d3-9f20b7383305")
 		(property "Reference" "#PWR07"
 			(at 76.2 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 76.2 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
 			(at 76.2 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 76.2 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 76.2 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(face "Times New Roman")
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
